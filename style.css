@@ -48,16 +48,7 @@ footer.verse-photo{aspect-ratio:1;padding:8%;margin:28px 24px 24px;background:ur
 form {
   font-weight: 500;
   font-size: 21px;
-}
 
-/* Кнопки и поля — простой читаемый шрифт */
-.button,
-input,
-textarea,
-select {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-}
 
 /* Заголовки — чуть плотнее */
 h2 {
