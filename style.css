@@ -28,3 +28,20 @@ footer.verse-photo{aspect-ratio:1;padding:8%;margin:28px 24px 24px;background:ur
 .verse-panel .verse-source{font-size:16px;line-height:1.4;margin-top:18px}
 .verse-panel .verse-source:before{content:'';display:block;width:55px;height:1px;background:#e6d1b7;margin:0 auto 17px}
 @media(max-width:370px){.calendar-section{padding-left:16px;padding-right:16px}.calendar h2{margin-bottom:10px}.calendar .week{font-size:12px;margin-bottom:6px}.calendar .days span{font-size:16px}.calendar .year{margin-top:9px}.calendar .week,.calendar .days{margin-left:8px;margin-right:8px}footer.verse-photo{margin-left:16px;margin-right:16px;padding:6%}.verse-panel{padding:20px 10px}.verse-panel blockquote{font-size:21px}.verse-panel .verse-source{font-size:14px}}
+
+/* Однократная мягкая анимация приглашения. Без JS всё сразу видно. */
+.days .selected:after{display:none}
+.date-heart{position:absolute;inset:-3px -2px;width:calc(100% + 4px);height:calc(100% + 6px);overflow:visible;pointer-events:none}
+.date-heart path{fill:none;stroke:#946a57;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.motion-ready .reveal,.motion-ready .verse-photo{transition:opacity .85s ease,transform .85s cubic-bezier(.2,.65,.3,1)}
+.motion-ready .reveal:not(.visible),.motion-ready .verse-photo:not(.visible){opacity:0;transform:translateY(18px)}
+.motion-ready .calendar-section .date-heart path{stroke-dasharray:1;stroke-dashoffset:1}
+.motion-ready .calendar-section.visible .date-heart path{animation:draw-heart 1.5s ease .65s forwards}
+.hero-motion .hero-photo{animation:photo-appear 1.05s ease both}
+.hero-motion .hero-names{animation:names-appear 1s ease .4s both}
+.motion-ready .verse-photo .verse-panel{opacity:0;transform:translateY(9px);transition:opacity 1.2s ease .3s,transform 1.2s ease .3s}
+.motion-ready .verse-photo.visible .verse-panel{opacity:1;transform:none}
+@keyframes draw-heart{to{stroke-dashoffset:0}}
+@keyframes photo-appear{from{opacity:0}to{opacity:1}}
+@keyframes names-appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero-photo,.hero-names,.reveal,.verse-photo,.verse-panel,.date-heart path{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}.date-heart path{stroke-dashoffset:0!important}}
