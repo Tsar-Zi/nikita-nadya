@@ -41,20 +41,16 @@ footer.verse-photo{aspect-ratio:1;padding:8%;margin:28px 24px 24px;background:ur
 .hero-motion .hero-names{animation:names-appear 1s ease .4s both}
 .motion-ready .verse-photo .verse-panel{opacity:0;transform:translateY(9px);transition:opacity 1.2s ease .3s,transform 1.2s ease .3s}
 .motion-ready .verse-photo.visible .verse-panel{opacity:1;transform:none}
-/* Основной текст — немного плотнее */
-.intro p,
-.chat p,
-.rsvp > p,
-form {
-  font-weight: 500;
-  font-size: 21px;
-
-
-/* Заголовки — чуть плотнее */
-h2 {
-  font-weight: 500;
-}
 @keyframes draw-heart{to{stroke-dashoffset:0}}
 @keyframes photo-appear{from{opacity:0}to{opacity:1}}
 @keyframes names-appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.hero-photo,.hero-names,.reveal,.verse-photo,.verse-panel,.date-heart path{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}.date-heart path{stroke-dashoffset:0!important}}
+
+/* Надписи из одобренного макета: начертание сохранено точно. */
+.names .artwork-title{margin:0;line-height:1}
+.hero .names-art{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;transform:none;mix-blend-mode:multiply}
+.hero .names{padding:16px 12px 0}
+.intro .wedding-date{display:block;margin:22px 0 20px;padding:0;border:0;border-radius:0;background:none;line-height:1.2}
+.calligraphy-art{max-width:100%;height:auto;mix-blend-mode:multiply}
+.intro .date-art{display:block;width:100%;height:auto;margin:0 auto;aspect-ratio:auto}
+.intro .wedding-date span{display:block;margin-top:4px;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:500;color:#674a34}
