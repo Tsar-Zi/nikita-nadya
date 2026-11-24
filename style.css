@@ -41,6 +41,25 @@ footer.verse-photo{aspect-ratio:1;padding:8%;margin:28px 24px 24px;background:ur
 .hero-motion .hero-names{animation:names-appear 1s ease .4s both}
 .motion-ready .verse-photo .verse-panel{opacity:0;transform:translateY(9px);transition:opacity 1.2s ease .3s,transform 1.2s ease .3s}
 .motion-ready .verse-photo.visible .verse-panel{opacity:1;transform:none}
+/* Имена */
+.hero .names-art {
+  display: block;
+  width: 90% !important;
+  max-width: 380px !important;
+  height: auto !important;
+  margin: 0 auto;
+  object-fit: contain !important;
+}
+
+/* Дата */
+.intro .date-art {
+  display: block;
+  width: 90% !important;
+  max-width: 320px !important;
+  height: auto !important;
+  margin: 0 auto;
+  object-fit: contain !important;
+}
 @keyframes draw-heart{to{stroke-dashoffset:0}}
 @keyframes photo-appear{from{opacity:0}to{opacity:1}}
 @keyframes names-appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
