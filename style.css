@@ -4,3 +4,7 @@
 /* Кадр исходника: x=0..1536, y=500..1750. Головы, руки и букет внутри. */
 .hero .photo-frame{width:100%;aspect-ratio:1536/1250;overflow:hidden;position:relative}
 .hero .photo-frame img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:initial;object-position:initial;transform:translateY(-24.4140625%)}
+
+.rsvp-details{margin-top:22px}.rsvp-details>summary{list-style:none;display:inline-block}.rsvp-details>summary::-webkit-details-marker{display:none}.rsvp-details[open]>summary{margin-bottom:3px}.rsvp-details>summary:focus-visible{outline:2px solid #7c5a3d;outline-offset:4px}
+
+.intro:after{display:none}.intro .address{margin:15px 0 20px}.intro .date{margin-top:12px}.guest-hint{font-size:14px;margin-top:6px}.guest-row{display:flex;gap:8px;align-items:center}.guest-row input{min-width:0}.guest-row button{min-width:0;width:auto;margin:0;padding:9px;background:transparent;border:0;color:var(--ink);text-decoration:underline;cursor:pointer}#additional-guests[hidden]{display:none}blockquote{font-size:25px;line-height:1.35;margin:0 12px 14px}.verse-source{font-size:17px}.names h1{font-size:37px}@media(max-width:370px){.names h1{font-size:31px}}
